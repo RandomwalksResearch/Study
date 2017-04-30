@@ -9,8 +9,8 @@ import tensorflow as tf
 import numpy as np
 
 # tf Graph Input
-X = np.array([3, 8, 19, 21, 40])
-Y = np.array([9.6, 25.6, 60.8, 67.2, 128.])
+X = np.array([2, 3, 5, 6, 8, 9, 15, 17, 19])
+Y = np.array([6.4, 9.6, 16.0, 19.2, 25.6, 28.8, 48.0, 54.4, 60.8])
 
 # Set Wrong model Weights
 W = tf.Variable(-4.0)
@@ -31,6 +31,6 @@ sess = """erase this and enter your code"""
 sess."""erase this and enter your code"""
 
 
-for step in range(201):
+for step in range(51):
     print(step, sess.run(W))
     sess.run(train)
